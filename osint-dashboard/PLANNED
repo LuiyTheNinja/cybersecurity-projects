@@ -1,0 +1,6 @@
+- Add number of Subdomains found 
+- Add Bar chart or Pie chart --> chart.js
+
+To run in terminal -
+pip install flask requests
+python app.py
