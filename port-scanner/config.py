@@ -1,1 +1,5 @@
+TARGET = "127.0.0.1"
 
+PORT_RANGE = (20, 1024)
+
+TIMEOUT = 1
