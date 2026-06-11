@@ -1,0 +1,11 @@
+flask
+requests
+beautifulsoup4
+scapy
+pandas
+matplotlib
+dnspython
+python-nmap
+selenium
+opencv-python
+``
