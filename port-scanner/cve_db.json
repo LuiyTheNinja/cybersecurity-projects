@@ -1,1 +1,27 @@
-
+{
+  "ftp": {
+    "cve": "CVE-2015-3306",
+    "severity": "High",
+    "description": "vsftpd backdoor vulnerability"
+  },
+  "ssh": {
+    "cve": "CVE-2018-15473",
+    "severity": "Medium",
+    "description": "OpenSSH user enumeration"
+  },
+  "http": {
+    "cve": "CVE-2021-41773",
+    "severity": "Critical",
+    "description": "Apache path traversal"
+  },
+  "rdp": {
+    "cve": "CVE-2019-0708",
+    "severity": "Critical",
+    "description": "BlueKeep RCE"
+  },
+  "telnet": {
+    "cve": "CVE-2016-0777",
+    "severity": "High",
+    "description": "libssh plaintext leak"
+  }
+}
