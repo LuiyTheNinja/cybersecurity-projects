@@ -21,3 +21,4 @@ It identifies open ports, maps them to known services, and correlates findings a
 ## Usage
 
 ```bash
+python3 scanner.py
