@@ -1,20 +1,25 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>OSINT Dashboard</title>
-</head>
-<body>
-    <h1>OSINT Dashboard</h1>
+{% extends "base.html" %}
 
-    <form method="POST">
-        <input type="text" name="domain" placeholder="Enter domain">
-        <button type="submit">Search</button>
-    </form>
+{% block content %}
 
-    <ul>
-        {% for item in results %}
-        <li>{{ item.name_value }}</li>
-        {% endfor %}
-    </ul>
-</body>
-</html>
+<form method="POST">
+    <input type="text" name="domain" placeholder="Enter domain" required>
+    <button type="submit">Analyze</button>
+</form>
+
+{% if data %}
+<h2>Results for {{ data.domain }}</h2>
+
+<h3>Subdomains</h3>
+<ul>
+    {% for sub in data.subdomains %}
+    <li>{{ sub }}</li>
+    {% endfor %}
+</ul>
+
+<h3>WHOIS</h3>
+<pre>{{ data.whois }}</pre>
+
+{% endif %}
+
+{% endblock %}
